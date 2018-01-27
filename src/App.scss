@@ -1,0 +1,140 @@
+@import 'shared/stylesheets/variables';
+
+.App {
+  text-align: center;
+
+  &-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+}
+
+.parallax {
+  &--header {
+    background-image: url($image-home-url);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    position: fixed;
+    height: 822px;
+    width: 100%;
+  }
+
+  &--body {
+    position: relative;
+    top: 822px;
+  }
+}
+
+@media screen and (max-width: $tablet-query) {
+  .parallax {
+    &--header {
+      height: 659px;
+    }
+
+    &--body {
+      top: 659px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-query) {
+  .parallax {
+    &--header {
+      height: 400px;
+    }
+
+    &--body {
+      top: 400px;
+    }
+  }
+}
+
+.about {
+  background-image: url("/assets/images/mapa-de-minas.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+  max-width: 960px;
+  height: 652px;
+  margin: $container-center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  top: -45px;
+  text-align: left;
+
+  &__title {
+    font-weight: $font-weight-extrabold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    letter-spacing: -1px;
+    margin: 45px 0 25px;
+    color: $white;
+    text-shadow: $text-shadow;
+    max-width: 500px;
+  }
+
+  &__description {
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: $white;
+    text-shadow: $text-shadow;
+    max-width: 500px;
+    letter-spacing: 0.3px;
+  }
+}
+
+@media screen and (max-width: $tablet-query) {
+  .about {
+    max-width: 600px;
+    height: 489px;
+
+    &__title {
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+      margin-bottom: 15px;
+      max-width: 365px;
+    }
+
+    &__description {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      max-width: 365px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-query) {
+  .about {
+    max-width: 100%;
+    height: auto;
+    padding: 0 20px;
+    align-items: flex-start;
+    top: 0;
+    margin-bottom: 50px;
+
+    &__title {
+      font-size: 1.7rem;
+      line-height: 2rem;
+      margin-bottom: 15px;
+      max-width: 100%;
+    }
+
+    &__description {
+      font-size: 0.7rem;
+      line-height: 1rem;
+      max-width: 100%;
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

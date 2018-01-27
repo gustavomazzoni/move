@@ -1,0 +1,65 @@
+/* Colors */
+$red:         #e64c3b;
+$light-red:   lighten($red, 3);
+$black:       #242424;
+$light-black: lighten($black, 15);
+$white:       #ffffff;
+$yellow:      gold;
+
+// Primary Colors
+$primary:    #5fcf80; // Green nature
+$primary-10: #9f88dc; // Purple
+$primary-20: #d5dfff; // Light purple
+$primary-30: #2959cc; // Blue 3
+$primary-40: #d48ba0; // Red
+$primary-50: #8bd49A; // Green
+
+// Secondary Colors
+$secondary-10: #fb467b;
+$secondary-20: #3CC8F5;
+$secondary-30: #28E5A3;
+
+// Grayscale
+$grayscale-10: #32323b;
+$grayscale-20: #80808C;
+$grayscale-30: #aaabbb;
+$grayscale-40: #e0e0e0;
+$grayscale-50: #e6e8ea;
+$grayscale-60: #ebeef4;
+$grayscale-70: #f5f7fd;
+
+/* Typography */
+$font-family: 'Montserrat', sans-serif;
+
+$font-weight-light:     300;
+$font-weight-regular:   400;
+$font-weight-bold:      700;
+$font-weight-extrabold: 800;
+$font-weight-black:     900;
+
+/* Fonts */
+/*$font-light: "Montserrat-Light", sans-serif;
+$font-regular: "Montserrat-Regular", sans-serif;
+$font-bold: "Montserrat-Bold", sans-serif;
+$font-extrabold: "Montserrat-ExtraBold", sans-serif;
+$font-black: "Montserrat-Black", sans-serif;*/
+
+/*Images*/
+$image-home-url: '/images/home-background.jpg';
+
+/* Layout */
+$container-width: 1024px;
+$container-center: 0 auto;
+$container-gutter: 0 20px;
+$tablet-query: 1023px;
+$tablet-container-width: 1024px;
+$tablet-container-center: 0 auto;
+$tablet-container-gutter: 0 20px;
+$mobile-query: 767px;
+$mobile-container-width: 1024px;
+$mobile-container-center: 0 auto;
+$mobile-container-gutter: 0 20px;
+
+/* Helpers */
+$radius: 5px;
+$text-shadow: 1px 1px 2px #000000;
